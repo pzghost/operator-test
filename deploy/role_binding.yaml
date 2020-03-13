@@ -1,0 +1,11 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: operator-sdk-statefulset
+subjects:
+- kind: ServiceAccount
+  name: operator-sdk-statefulset
+roleRef:
+  kind: Role
+  name: operator-sdk-statefulset
+  apiGroup: rbac.authorization.k8s.io

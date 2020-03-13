@@ -1,0 +1,7 @@
+apiVersion: sts.example.com/v1alpha1
+kind: Sts
+metadata:
+  name: example-sts
+spec:
+  # Add fields here
+  size: 3
